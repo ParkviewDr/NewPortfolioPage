@@ -1,0 +1,399 @@
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package MitchellDevelopment
+ */
+
+?>
+
+
+<?php
+
+/*
+	Template Name: Home
+*/
+
+
+?>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132327518-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-132327518-1');
+</script>
+
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Sarabun|Thasadith" rel="stylesheet"> 
+
+
+
+    <!--- GOOGLE FONTS 
+
+    
+
+  
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Thasadith', sans-serif;
+
+    font-family: 'Sarabun', sans-serif;
+
+
+
+-->
+
+
+
+
+    <!--    
+        ==== OVERLAY SECTION ====
+        
+
+
+/* 
+==== OVERLAY SECTION ====
+*/
+
+-->
+<style>
+.outer{
+  
+  height:700px;
+  display: block;
+  position: relative;
+
+}
+
+.outer img {
+  
+  height: auto;
+}
+
+.outer .inner {
+
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  transition: opacity .5s;
+}
+
+.outer .inner p {
+ padding-right:70px;
+  color: white;
+  font-size:60px;
+  letter-spacing:1.1px;
+  padding-top: 100px;
+  line-height: 110px;
+ font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+
+.outer .inner {
+  opacity: .8;
+  transition: opacity .5s;
+}
+
+ /*
+ ==== PORTFOLIO SECTION ====
+ */
+ 
+ .caption-r {
+     color:white;
+   font-family: 'Montserrat', sans-serif;
+   font-size:24px;
+    padding:7px 0px 7px 0;
+   background-color:#f24b4b;
+     
+ }
+ 
+  .caption-b {
+      color:white;
+   font-family: 'Montserrat', sans-serif;
+   font-size:24px;
+   padding:7px 0px 7px 0;
+   background-color:#1a0670;
+     
+ }
+ 
+ .caption-b:hover  {
+     color:red;
+    
+ }
+  .caption-r:hover  {
+     color:black;
+    
+ }
+ .caption-g:hover {
+     color:red;
+ }
+ .caption-y:hover {
+     color:black;
+ }
+ 
+   .caption-g {
+      color:white;
+   font-family: 'Montserrat', sans-serif;
+   font-size:24px;
+    padding:13px 0px 12px 0;
+   background-color:#1a3f0e;
+     
+ }
+
+ .caption-y {
+           color:white;
+   font-family: 'Montserrat', sans-serif;
+   font-size:24px;
+    padding:6px 0px 6px 0;
+   background-color:#F9AB00;
+ }
+ 
+ 
+ 
+ 
+ .portfolio {
+     padding:10px 20px 10px 20px;
+     font-family: 'Open Sans', sans-serif;
+     font-size:20px;
+     text-align:center;
+ }
+ 
+ .title {
+     font-family: 'Thasadith', sans-serif;
+     text-align:center;
+     font-size:36px;
+     padding-top:30px;
+     padding-bottom:30px;
+ }
+     .nav-link {
+         font-family: 'Thasadith', sans-serif;
+         font-size:22px;
+         letter-spacing:1.1px;
+         margin-left:140px;
+       
+        
+     }
+     .nav-link:hover {
+         background-color:#25777a;
+         
+     }
+    
+ 
+ .nav-link:on-hover {
+     color:black;
+ }
+ 
+ .recommendation {
+     background-color:#47433b;
+     color:white;
+     font-size:24px;
+     text-align:center;
+     padding:20px 0 20px 0;
+     font-family: 'Montserrat', sans-serif;
+ }
+ 
+ 
+  .bio {
+     background-color:#47433b;
+     color:white;
+     font-size:24px;
+     text-align:center;
+     padding:20px 0 20px 0;
+     font-family: 'Thasadith', sans-serif;
+ }
+
+ 
+ 
+</style>
+<!--- prv nav 
+<nav class="navbar navbar-dark" style="background-color: #03bfa6;">
+    <a class="navbar-brand" href="#">Matt Mitchell</a> -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #03bfa6;" >
+  <a class="navbar-brand" href="#">Matt Mitchell Web Development</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#Portfolio">Portfolio</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#AboutMe">About Me</a>
+      </li>
+    
+    </ul>
+  </div>
+</nav>
+
+
+<!--- ONLY VISIBLE ON MOBILE 
+
+
+ <div class="d-block d-sm-none">
+       <img src="https://mmitchelldevelopment.com/computersm.jpg" class="img-fluid" alt="Responsive image">
+       <div class="title">
+         <p>Matt Mitchell Web Design</p>
+     </div>
+     </div> --- end of mobile display--->
+
+<!--- visible on desktop 
+
+    
+   <div class="d-none d-lg-block"> -->
+<div class="outer">
+    <img src="https://mmitchelldevelopment.com/computer.jpg" class="img-fluid" alt="Responsive image">
+
+ <div class="inner">
+     <p>Matt Mitchell </br>Web Development</p>
+</div>
+     </div>
+</div>
+     </div>
+  <div class="portfolio">
+   <div class="row">
+         <div class="container-fluid">
+             <div class="title">
+             <h2 id="Portfolio">PORTFOLIO</h2>
+             </div> <!--title -->
+           
+         </div>
+         
+         </div>
+     </div>
+  
+    <div class="portfolio">   
+        <div class="container-fluid">
+             <div class="row">
+         
+  
+    <div class="col-sm-6">
+        <a href="https://musicwithclaire.com/">
+        <img src="https://mmitchelldevelopment.com/claire.png" class="img-fluid" alt="Responsive image">
+        <p class="caption-r">Music With Claire</p></a>
+              </div> <!--col-->
+              <div class="col-sm-6">
+                   <a href="http://mmitchelldevelopment.com/upenn/">
+        <img src="https://mmitchelldevelopment.com/upenn.png" class="img-fluid" alt="Responsive image">
+         <p class="caption-b">Local University Mockup</p></a>
+              </div> <!--col-->
+             </div> <!--row-->
+           </div>
+           </div>
+             
+               
+       <div class="portfolio">
+           <div class="container-fluid">
+             <div class="row">
+    <div class="col-md-6">
+           <a href="http://mmitchellwebdesign.com/nrc.html">
+        <img src="https://mmitchelldevelopment.com/norristown.png" class="img-fluid" alt="Responsive image">
+        <p class="caption-g">Norristown Running Club</p></a>
+              </div> <!--col-->
+              <div class="col-md-6">
+                   <a href="http://mmitchellwebdesign.com/new/index.php/home/">
+        <img src="https://mmitchelldevelopment.com/mitchell.png" class="img-fluid" alt="Responsive image">
+         <p class="caption-y">My previous portfolio website</p></a>
+              </div> <!--col-->
+             </div> <!--row-->
+              </div><!--container-->
+             </div><!--portfolio-->
+             
+               <div class="recommendation">
+             <div class="row">
+                 <div class="container-fluid">
+                     <div class="col-6 offset-3">
+                         <u><h3>Claire Cavoto's Recommendation</h3></u>
+                         <p>"I don't know how Matt Mitchell does what he does. 
+                         All I know is, after I hired him to design my <a href="https://musicwithclaire.com/">company's website</a>,
+                         he did everything I asked and more, and <span style="color:#34A853"> the website looks great.</span> He is easy to work with and is a</br> <span style="color:#EA4335"> great listener.</span></p>
+                        <p> Besides the technical skills to run the "back end" seamlessly, Matt has a real eye for design.
+                        If I simply want to him to fix a problem, he does it.  
+                         I recommend his work to friends and colleagues.  His work</br><span style="color:#edae28"> greatly exceeded my expectations."</p></span>
+                     </div>
+                     </div>
+                 </div>
+             </div>
+          
+           <div class="portfolio">
+   <div class="row">
+         <div class="container-fluid">
+             <div class="title">
+             <h2>Current Projects</h2>
+             </div> <!--title -->
+           
+         </div><!--- container fluid-->
+         
+         </div><!--row-->
+     <!--portfolio-->
+    <div class="portfolio">
+         <div class="container-fluid">
+             <div class="row">
+            
+    <div class="col-md-6">
+       <a href="http://mmitchelldevelopment.com/dice.html">
+        <img src="https://mmitchelldevelopment.com/dice.png" class="img-fluid" alt="Responsive image">
+        <p class="caption-b">Dice Game using Javascript</p></a>
+              </div> <!--col-->
+           <a href="http://mmitchelldevelopment.com/budget.html">
+        <img src="https://mmitchelldevelopment.com/budget.png" class="img-fluid" alt="Responsive image">
+        <p class="caption-b">Budget Application</p></a>
+              </div> <!--col-->
+             </div> <!--row-->
+    
+              </div> <!--container-->
+             </div> <!--portfolio-->
+             
+             
+             <div class="bio">
+                 
+                     <div class="row">
+                       
+                     <div class="col-4">
+                          <img src="https://mmitchelldevelopment.com/bio.jpg" style="padding-top:40px;" class="img-fluid" alt="Responsive image">
+                         
+                     </div>
+                        <div class="col-6">
+                           <span style="color:#34A853"><u><h2>About Me</h2></u></span>
+                         <p id="AboutMe">I graduated LaSalle University in 2011 with a bachelor degree in Philosophy. That same year I started working with Executive Health Resources.</p> <p>In 2015, I started my journey as a 
+                         web developer when I bought my first domain, which was my wedding website. The experience of learning and launching a successful website opened my eyes to a new possibility and a new career. 
+                         Since that time, I have built many other website some of which are featured above. I have also learned a lot about HTML, CSS3, Wordpress, Javascript, and Bootstrap.</p> I consider myself a
+                         lifelong learner and I will continue to sharpen my skills as a web developer.</p><p> I look forward to working with you. My email is </br>mitchell1459@gmail.com</br> feel free to send me a message!</p>
+                       </div>  
+                     </div>
+                 </div>
+             </div>
+             
+            
+    </div>
+  
+  </div>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
